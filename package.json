@@ -1,0 +1,19 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main-express.js",
+  "scripts": {
+    "test": "mocha --recursive --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mocha": "^9.0.1",
+    "mongo-unit": "^2.0.1",
+    "mongoose": "^5.10.15"
+  }
+}
