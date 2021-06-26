@@ -8,12 +8,12 @@ you to build a solution using a language and framework that you feel best showca
 Watch catalogue
 Below is a catalogue of four watches and their associated prices:
 There are a few requirements worth noting here:
-● The first two products have a possible discount. As an example, if the user attempts to
+* The first two products have a possible discount. As an example, if the user attempts to
 checkout three or six Rolex watches then they will receive the discount price once or twice,
 respectively.
-● There is no limit to the number of items or combinations of watches a user can checkout.
-● There is no limit to the number of times a discount can be used.
-● Similarly, a user can checkout a single item if they wish.
+* There is no limit to the number of items or combinations of watches a user can checkout.
+* There is no limit to the number of times a discount can be used.
+* Similarly, a user can checkout a single item if they wish.
 Endpoint reference
 Watch ID Watch Name Unit Price Discount
 001 Rolex 100 3 for 200
@@ -51,15 +51,20 @@ This application is programmed using NodeJS
 * MongoDB
 * Postman Tool 
 ### In Brief: 
-* Install NodeJS
+* Install NodeJS by following the tutorial in the link below:
+    https://www.freecodecamp.org/news/how-to-install-node-in-your-machines-macos-linux-windows/
+* Install MongoDB by following the tutorial in the link below:
+    https://docs.mongodb.com/manual/administration/install-community/
+For postman:DONOT use POSTMAN for WEB as this is a locally hosted webapi so ensure that you install postman on your local machine by following the link below:
+https://learning.postman.com/docs/getting-started/installation-and-updates/#:~:text=Postman%20is%20available%20as%20a,click%20Download%20for%20your%20platform.
 * include package.json in the file structure 
 * use the command **npm app.js** in the command prompt to start the application server on port 8080 [if port 8080 is in use then automatically another port will be assigned to the server and the port number will be mentioned in command response on the CLI]
 * use postman tool for testing the post request (E2E testing).
 * personally I used VS Code to develop this application.
 * For Testing I have used the mocha framework and the postman tool. 
-  * End-to-end testing: In postman tool, click on the runner tab and run the complete eCommerceAPI collection to see that all 8 tests are passing. Click on the button below to get access the e2e tests in postman tool.
+  * End-to-end testing: In postman tool, click on the runner tab and run the complete eCommerceAPI collection to see that all 8 tests are passing. Click on the button below to get access the e2e tests in postman tool. Ensure that the app server has been started before these tests are run by using the commond **node app.js** from the project directory location.
   [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/47b3c7ba1d43bfe4f35c)
-  *  For mongoDB testing, simply run the command **npm run test** to ensure that all 3 tests are passing. These mongo commands were tested and then added to application logic. 
+  *  For mongoDB testing, simply run the command **npm run test** from the project directory location to ensure that all 3 tests are passing. These mongo commands were tested and then added to application logic. 
 ## My approach to the problem:
 ### Problem BreakDown : 
 This problem was broken down into 3 stages and each stage was followed by unit testing. 
